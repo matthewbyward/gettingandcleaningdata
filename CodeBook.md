@@ -2,17 +2,15 @@
 
 ## Analysis process
 
-The analysis script, run_analysis.R reads in the raw experiment data and performs various
-data formatting operations on it as well as parsing out of only the desired data points.
-The steps performed are as follows:
+The analysis script, `run_analysis.R` reads in the experiment data and performs various data formatting, reshaping and parsing  operations on it as well as parsing out of only the desired data points.  The steps performed are as follows:
 
 - The test data set as well as subject and activity labels are read in and merged into a data frame
 - The training data set as well as subject and activity labels are read in and merged into a data frame
 - The test and training data frames are merged together into one data frame and meaningful column names are assigned to the data frame
 - The mean and standard deviation measurements are extracted along with the subject and activity details for each observation
-- The activity id is replaced by the activity name provided with raw data for each observation.
+- The activity id is replaced by the activity name provided with the experiment data for each observation.
 - A tidy data set is generated that summarizes each activity for each participant and finds the mean of all mean and standard deviation measurements.
-- The tidy data set is written to the filesystem with the name "tidy_data.txt"
+- The tidy data set is written to the filesystem with the name `tidy_data.txt` in the same directory as the `run_analysis.R` script.
 
 
 
@@ -23,8 +21,7 @@ The variables in the tidy data are as follows:
  * subject_id - The id of the experiment participant
  * activity_name - the name of the activity that was measured
 
-The following variables are the mean of all mean and standard deviation measurements 
-made for each activity for each participant.
+The following variables aare the mean of all observation mean measurements denoted with names that contain mean() and standard deviation measurements denoted with names that contain std() for each activity and each subject.
 
  * tBodyAcc-mean()-X
  * tBodyAcc-mean()-Y
@@ -74,3 +71,7 @@ made for each activity for each participant.
  * fBodyGyro-std()-X
  * fBodyGyro-std()-Y
  * fBodyGyro-std()-Z
+
+### More Information
+
+Descriptions of the measurement data points that this data was derived from can be found in the unzipped experiement data in `UCI HAR Dataset/README.txt` and `UCI HAR Dataset/features_info.txt`
