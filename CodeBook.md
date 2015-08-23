@@ -1,19 +1,5 @@
 # Getting and Cleaning Data: Course Project
 
-## Analysis process
-
-The analysis script, `run_analysis.R` reads in the experiment data and performs various data formatting, reshaping and parsing  operations on it as well as parsing out of only the desired data points.  The steps performed are as follows:
-
-- The test data set as well as subject and activity labels are read in and merged into a data frame
-- The training data set as well as subject and activity labels are read in and merged into a data frame
-- The test and training data frames are merged together into one data frame and meaningful column names are assigned to the data frame
-- The mean and standard deviation measurements are extracted along with the subject and activity details for each observation
-- The activity id is replaced by the activity name provided with the experiment data for each observation.
-- A tidy data set is generated that summarizes each activity for each participant and finds the mean of all mean and standard deviation measurements.
-- The tidy data set is written to the filesystem with the name `tidy_data.txt` in the same directory as the `run_analysis.R` script.
-
-
-
 ## CodeBook
 
 The variables in the tidy data are as follows:

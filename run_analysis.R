@@ -1,9 +1,6 @@
 ##
-## This R Script takes the raw data found here
-## https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-## Which when unzipped creates the folder "UCI HAR Dataset" and when this
-## script runs against it, it generates a tidy dataset of the means for all 
-## measured variables for each activity for each subject
+## Refer to README.md and CodeBook.md in this same repository for details
+## on how this script works
 ##
 
 library(dplyr)
